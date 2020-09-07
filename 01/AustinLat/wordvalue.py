@@ -2,7 +2,11 @@ from data import DICTIONARY, LETTER_SCORES
 
 def load_words():
     """Load dictionary into a list and return list"""
-    pass
+    dic = open(DICTIONARY, 'r')
+    diclist = [line.split() for line in dic.readlines()]
+    return diclist
+
+
 
 def calc_word_value():
     """Calculate the value of the word entered into function
