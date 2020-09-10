@@ -22,7 +22,6 @@ def dictTopWord(dict):
     scorelistCount = 0
     topThreeWordList = []
     topThreeScoreList = []
-
     scoreList = []                                                                      # Create empty scoreList to run concurrently with my dictionary list.
                                                                                         # Using this two dimensional array I can find the top score and print the relavent index.
     with open(dict,'r') as f:
