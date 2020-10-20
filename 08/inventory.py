@@ -21,10 +21,17 @@
 
 
 def insuredItems():
-    rooms = ['bedroom', 'living room', 'kitchen']
+    bedroom = {'bed': 1000, 'desk': 200, 'computer': 2000, 'lamp': 60, 'TV': 1000}
+    living_room = {'couch': 2000, 'TV': 2000, 'table': 500, 'coffee_table': 400, 'rugs': 20000}
+    rooms = [bedroom, living_room]
+    for room in rooms:
+        for item in room:
+            print(f'({item} is {room[item]} dollars)')
 
-def addItems(item, price):
-    item == input('Please list item name')
-    price == input('Please list price')
+def addItems():
+    room = input('Please enter room name: ')
+    item = input('Please enter item name: ')
+    price = input('Please enter price: ')
 
 
+insuredItems()
